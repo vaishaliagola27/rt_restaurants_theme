@@ -150,3 +150,49 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+//custom code starts here
+
+add_action('wp_enqueue_scripts','enqueue_styles');
+/**
+ * grid layout added
+ */
+function enqueue_styles(){
+	wp_enqueue_style( "grid_css", get_template_directory_uri() . '/layouts/grid-layout.css' );
+	wp_enqueue_style( "header_css", get_template_directory_uri() . '/layouts/custom-header.css' );
+	wp_enqueue_style( "font_css", 'https://fonts.googleapis.com/css?family=Great+Vibes' );
+	
+	wp_enqueue_style( "footer_css", get_template_directory_uri() . '/layouts/custom-footer.css' );
+	
+	wp_register_style('rt-restaurants-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style( 'rt-restaurants-font-awesome');
+}
+
+/**
+ * custom menu add
+ */
+function clean_custom_menus() {
+
+	$locations = get_nav_menu_locations();
+	//menu name
+	$menu_name = 'primary';
+
+	//check if menu is present
+	if ( isset( $locations[ $menu_name ] ) ) {
+		$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+		$menu_items = wp_get_nav_menu_items( $menu->term_id );
+		?>
+			<?php
+				foreach ( ( array ) $menu_items as $key => $menu_item ) {
+					$title = $menu_item->title;
+					$url = $menu_item->url;
+			?>
+			<span>
+				<a class="nav-links" href="<?php echo $url ?>"><?php echo strtoupper( $title ) ?></a>
+			</span>
+			<?php
+		}
+		?>
+		<?php
+	}
+}

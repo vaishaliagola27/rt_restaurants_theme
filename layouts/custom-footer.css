@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 Feb, 2016, 4:28:31 PM
+    Author     : rtcamp
+*/
+
+.site-footer{
+	margin: 0px;
+}
+
+.contact-info{
+	background-color: #2D3E50;
+	height: 400px;
+	margin: 0px;
+	padding-top: 40px;
+	color: #7C92A9;
+}
+
+.site-info{
+	height: auto;
+	background-color: #0F1821;
+	margin: 0px;
+}
+
+.site-info >.site-title-footer a{
+	font-size:40px;
+	text-decoration: none;
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	color: #FFFFFF;
+	float: right;
+}
+
+.copyright-info{
+	padding-top: 15px;
+	float: right;
+}
+.site-info > .copyright-info span a.rtCamp-link{
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Great Vibes', cursive;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.contact-info{
+	display: inline-block;
+	position: relative;
+	color: #FFFFFF;
+}
+
+.footer-menu a.nav-links {
+	color: #7C92A9;
+	font-size: 12px;
+	text-decoration: none;
+	padding:0px 3% 10px 0px;
+	display: block;
+	font-weight: bold;
+}
+.contact-info .contact-us{
+	display: block;
+	position: relative;
+}
+
+.contact-info .contact-us .contact-details{
+	font-size: 14px;
+	text-align: justify;
+	margin-top: -10px;
+	color: #7C92A9;
+}
+
+.contact-info-title{
+	color: #FFFFFF;
+	font-weight: bold;
+	clear: both;
+}
+
+.contact-info > .footer-menu{
+	margin-left: 5%;
+	display: block;
+}
+
+.contact-info >.contact-us{
+	display: block;
+	position: relative;
+}
+
+.contact-number,.contact-email,.contact-address{
+	display: inline-block;
+	color: #7C92A9;
+	clear: both;
+	font-size: 12px;
+}
+
+.contact-number a{
+	color: #7C92A9;
+	text-decoration: none;
+}
+.contact-info > .follow-newletter{
+	display: block;
+	position: relative;
+}
