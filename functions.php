@@ -159,6 +159,7 @@ add_action('wp_enqueue_scripts','enqueue_styles');
  */
 function enqueue_styles(){
 	wp_enqueue_style( "grid_css", get_template_directory_uri() . '/layouts/grid-layout.css' );
+	wp_enqueue_style( "restaurant_page_css", get_template_directory_uri() . '/layouts/content-restaurants.css' );
 	wp_enqueue_style( "header_css", get_template_directory_uri() . '/layouts/custom-header.css' );
 	wp_enqueue_style( "font_css", 'https://fonts.googleapis.com/css?family=Great+Vibes' );
 	
@@ -166,6 +167,8 @@ function enqueue_styles(){
 	
 	wp_register_style('rt-restaurants-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'rt-restaurants-font-awesome');
+	wp_register_style('rt-restaurants-font-roboto', 'https://fonts.googleapis.com/css?family=Roboto');
+	wp_enqueue_style( 'rt-restaurants-font-roboto');
 }
 
 /**

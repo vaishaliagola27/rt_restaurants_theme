@@ -14,7 +14,7 @@ and open the template in the editor.
 
 .contact-info{
 	background-color: #2D3E50;
-	height: 400px;
+	height: auto;
 	margin: 0px;
 	padding-top: 40px;
 	color: #7C92A9;
@@ -89,18 +89,52 @@ and open the template in the editor.
 	position: relative;
 }
 
-.contact-number,.contact-email,.contact-address{
-	display: inline-block;
+.contact-number, .contact-email ,.contact-address{
 	color: #7C92A9;
+	display: inline-block;
+	position: relative;
 	clear: both;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .contact-number a{
 	color: #7C92A9;
 	text-decoration: none;
 }
+
+.contact-email p, .contact-address{
+	clear: both;
+	display: inline-block;
+	position: relative;
+	margin: 0px;
+}
+
 .contact-info > .follow-newletter{
 	display: block;
 	position: relative;
+	color: #7C92A9;
+}
+
+.newsletter{
+  margin-top:10%;	
+}
+
+.newsletter p:nth-of-type(2){
+	font-size: 12px;
+}
+
+.email-form{
+	clear: both;
+	display: inline;
+	position: relative;
+}
+.email-form input{
+	display: inline-block;
+	font-size: 12px;
+	padding: 10px;
+	width: 70%;
+}
+.email-form div{
+	display: inline-block;
+	clear: both;
 }

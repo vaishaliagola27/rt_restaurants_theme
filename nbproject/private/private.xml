@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/layouts/grid-layout.css</file>
-            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/style.css</file>
-            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/index.php</file>
+            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/functions.php</file>
+            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/footer.php</file>
+            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/header.php</file>
+            <file>file:/home/rtcamp/NetBeansProjects/rt_restaurants_theme/layouts/custom-footer.css</file>
         </group>
     </open-files>
 </project-private>

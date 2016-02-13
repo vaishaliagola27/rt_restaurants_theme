@@ -34,22 +34,22 @@
 					</p>
 				</div>
 				<div>
-					<div class="contact-number">
+					<div class="contact-number col span_9_of_12">
 						<i class="fa fa-phone-square fa-lg"></i>
 						<a href="tel://+91 12 34 123456">+91 12 34 123456</a>
 					</div>
 				</div>
 				<div>
-					<div class="contact-email">
+					<div class="contact-email col span_9_of_12">
 						<i class="fa fa-envelope fa-lg"></i>
-						<p>contact@luxuryrestaurants.com</p>
+						<span>contact@luxuryrestaurants.com</span>
 					</div>
 				</div>
 				<div>
-					<div class="contact-address">
+					<div class="contact-address col span_10_of_12">
 						<i class="fa fa-map-marker fa-lg"></i>
-						<p>12, stomach full,</p>
-						<p>Khau gali,India.</p>
+						12, stomach full,
+						Khau gali,India.
 					</div>
 				</div>
 			</div>
@@ -58,12 +58,30 @@
 					<p class="contact-info-title">
 						FOLLOW
 					</p>
+					<div class="follow-icons">
+						<i class="fa fa-facebook-square fa-lg"></i>
+						<i class="fa fa-twitter-square fa-lg"></i>
+						<i class="fa fa-google-plus-square fa-lg"></i>
+						<i class="fa fa-flickr fa-lg"></i>
+						<i class="fa fa-pinterest-square fa-lg"></i>
+						<i class="fa fa-rss-square fa-lg"></i>
+					</div>
 				</div>
 				
 				<div class="newsletter">
 					<p class="contact-info-title">
 						NEWSLETTER
 					</p>
+					<p class="">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+					<div class="email-form">
+						<form>
+							<input type="email" placeholder="Your email address.">
+							<div class="fa fa-envelope fa-2x"></div>
+						</form>
+						
+					</div>
 				</div>
 			</div>
 		</div>

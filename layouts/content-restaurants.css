@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Feb, 2016, 1:48:24 PM
+    Author     : rtcamp
+*/
+
+.content-area{
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+.main-content{
+	border: none;
+	background: none;
+	
+}
+.main-content >header{
+	display: block;
+}
+
+.tag{
+	color: #94D5F5;
+}
+.restaurant_type_tag>p:nth-of-type(1){
+	width: 11%;
+}
+.tag-food-type >p{
+	width:12%;
+	margin-top: 0px;
+}
+.restaurant_type{
+	display: block;
+}
+
+.image-gallery{
+	display: block;
+}
+
+.content{
+	
+}
+
+/*main content of restaurant*/
+
+.content > .res-details #restaurant-title{
+	color: #000000;
+}
+
+.labels{
+	color:#000000;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+.restaurant-timing {
+	color:#959393;
+}
+.timing_table #timing_title{
+	color: #000000;
+}
+.content > .res-details{
+	display: inline-block;
+}
+
+/* title of restaurants */
+.content >.res-details #restaurant-title{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.content > .res-details {
+	font-size: 1.0em;
+	color:#B0A9A9;
+}
+
+.content>.res-details .restaurant-timing *{
+	clear: both;
+	font-size: 1.0em;
+}
+
+.details{
+	float: left;
+	/*! position: absolute; */
+	margin-right:5%;
+}
+.rating img{
+	height: 20px;
+}
+.related_restaurants_slide{
+	clear: both;
+}
+.related-restaurant{
+	display: block;
+	position: relative;
+}
+.related_restaurants_slide .related-restaurant p.title{
+	display: block;
+	position: relative;
+}
+.related_restaurants_slide .related-restaurant img.rating{
+	height: 20px;
+	display: block;
+	position: relative;
+}
+
+.related_restaurants_slide .related-restaurant .details{
+	font-size: 0.8em;
+	display: block;
+}
+/* sidebar css */
+.content> .sidebar{
+	background-color: #EEEEEE;
+	display: inline-block;
+	height: 1000px;
+}
