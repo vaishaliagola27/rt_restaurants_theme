@@ -8,37 +8,36 @@ and open the template in the editor.
     Author     : rtcamp
 */
 
+/* class for footer */
 .site-footer{
 	margin: 0px;
 }
 
+/* contact info part */
 .contact-info{
 	background-color: #2D3E50;
 	height: auto;
 	margin: 0px;
 	padding-top: 40px;
 	color: #7C92A9;
+	display: inline-block;
+	position: relative;
+	color: #FFFFFF;
 }
 
+/* website info */
 .site-info{
 	height: auto;
 	background-color: #0F1821;
 	margin: 0px;
 }
-
-.site-info >.site-title-footer a{
-	font-size:40px;
-	text-decoration: none;
-	font-family: 'Great Vibes', cursive;
-	font-weight: normal;
-	color: #FFFFFF;
-	float: right;
-}
-
+/* copyright details */
 .copyright-info{
 	padding-top: 15px;
 	float: right;
 }
+
+/* rtCamp link */
 .site-info > .copyright-info span a.rtCamp-link{
 	text-decoration: none;
 	font-size: 20px;
@@ -47,12 +46,13 @@ and open the template in the editor.
 	color: #FFFFFF;
 }
 
-.contact-info{
-	display: inline-block;
-	position: relative;
-	color: #FFFFFF;
+/* footer menu */
+.contact-info > .footer-menu{
+	margin-left: 5%;
+	display: block;
 }
 
+/* footer menu links */
 .footer-menu a.nav-links {
 	color: #7C92A9;
 	font-size: 12px;
@@ -61,11 +61,14 @@ and open the template in the editor.
 	display: block;
 	font-weight: bold;
 }
+
+/* contact us form */
 .contact-info .contact-us{
 	display: block;
 	position: relative;
 }
 
+/* contact details */
 .contact-info .contact-us .contact-details{
 	font-size: 14px;
 	text-align: justify;
@@ -73,22 +76,14 @@ and open the template in the editor.
 	color: #7C92A9;
 }
 
+/* title of contact information */
 .contact-info-title{
 	color: #FFFFFF;
 	font-weight: bold;
 	clear: both;
 }
 
-.contact-info > .footer-menu{
-	margin-left: 5%;
-	display: block;
-}
-
-.contact-info >.contact-us{
-	display: block;
-	position: relative;
-}
-
+/* contact details */
 .contact-number, .contact-email ,.contact-address{
 	color: #7C92A9;
 	display: inline-block;
@@ -97,11 +92,13 @@ and open the template in the editor.
 	font-size: 14px;
 }
 
+/* phone number */
 .contact-number a{
 	color: #7C92A9;
 	text-decoration: none;
 }
 
+/* email id and address */
 .contact-email p, .contact-address{
 	clear: both;
 	display: inline-block;
@@ -109,31 +106,39 @@ and open the template in the editor.
 	margin: 0px;
 }
 
+/* follow newletter div */
 .contact-info > .follow-newletter{
 	display: block;
 	position: relative;
 	color: #7C92A9;
 }
 
+/* newsletter div */
 .newsletter{
   margin-top:10%;	
 }
 
+/* newsletter data */
 .newsletter p:nth-of-type(2){
 	font-size: 12px;
 }
 
+/* emailid form */
 .email-form{
 	clear: both;
 	display: inline;
 	position: relative;
 }
+
+/* email id input box */
 .email-form input{
 	display: inline-block;
 	font-size: 12px;
 	padding: 10px;
 	width: 70%;
 }
+
+/* email form div */
 .email-form div{
 	display: inline-block;
 	clear: both;

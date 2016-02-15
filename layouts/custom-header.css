@@ -8,29 +8,24 @@ and open the template in the editor.
     Author     : rtcamp
 */
 
-
-
+/* main header */
 #masthead {
 	background: #ffffff none repeat scroll 0 0;
 }
 
+/* title */
 .site-title {
 	text-align: right;
 }
 
-.site-title a {
-	font-size:60px;
-	text-decoration: none;
-	font-family: 'Great Vibes', cursive;
-	color: #153B79;
-}
-
+/* advertisement on header */
 .advertisement {
 	background: #EEEEEE;
 	height: 100px;
 	text-align: center;
 }
 
+/* navigation menu */
 .navigation {
 	display: inline-block;
 	position: relative;
@@ -38,6 +33,8 @@ and open the template in the editor.
 	margin: 0;
 	padding: 10px 0 5px 0;
 }
+
+/* links on navigation menu */
 .navigation a.nav-links {
 	color: #ffffff;
 	font-size: 15px;
@@ -46,6 +43,7 @@ and open the template in the editor.
 	font-weight: bold;
 }
 
+/* search icon */
 .search-icon{
 	float: right;
 	margin: 0px 8.50% 5px 0;

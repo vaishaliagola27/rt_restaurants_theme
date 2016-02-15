@@ -86,7 +86,7 @@
 			</div>
 		</div>
 		<div class="site-info col span_12_of_12">
-			<h1 class="site-title-footer col span_3_of_12"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Luxury Restaurants</a></h1>
+			<div class="site-title-footer col span_3_of_12"><img src="<?php echo get_template_directory_uri().'/images/logo_footer.png'?>" /></div>
 			<div class="copyright-info col span_5_of_12">
 				<span>Designed by <a class="rtCamp-link" href="https://rtcamp.com/">rtCamp</a>. All rights Reserved. Copyright © 2016.</span> 
 			</div>
