@@ -25,7 +25,7 @@
 
 			<header id="masthead" class="site-header section group col span_12_of_12" role="banner">
 				<div class="site-branding">
-					<h1 class="site-title col span_5_of_12"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Luxury Restaurants</a></h1>
+					<div class="site-title col span_5_of_12"><img src="<?php echo get_template_directory_uri().'/images/logo.png' ?>" /></div>
 					<div class="advertisement col span_6_of_12" >
 						ADVERTISEMENT
 					</div>
