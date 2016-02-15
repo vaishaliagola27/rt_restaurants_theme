@@ -38,7 +38,7 @@ and open the template in the editor.
 /* food type taxonomy */
 .tag-food-type >p{
 	width:12%;
-	margin-top: 0px;
+	/*! margin-top: 0px; */
 }
 
 /* restaurant type */
@@ -135,4 +135,18 @@ and open the template in the editor.
 	background-color: #EEEEEE;
 	display: inline-block;
 	height: 1000px;
+}
+
+/* slick slider changes */
+.slick-arrow {
+	background-color: #7A99A8;
+}
+.slick-arrow:hover{
+	background-color: #7A99A8;
+}
+.slick-arrow:selection{
+	background-color: #7A99A8;
+}
+.slick-arrow:enabled{
+	background-color: #7A99A8;
 }
