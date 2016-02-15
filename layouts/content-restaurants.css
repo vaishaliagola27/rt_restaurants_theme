@@ -8,60 +8,80 @@ and open the template in the editor.
     Author     : rtcamp
 */
 
+/* main content area */
 .content-area{
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
 }
+/* content of single restaurant */
 .main-content{
 	border: none;
 	background: none;
-	
+
 }
+
+/* header css */
 .main-content >header{
 	display: block;
 }
 
+/* taxonomy css */
 .tag{
 	color: #94D5F5;
 }
+
+/* restaurant type taxonomy */
 .restaurant_type_tag>p:nth-of-type(1){
 	width: 11%;
 }
+
+/* food type taxonomy */
 .tag-food-type >p{
 	width:12%;
 	margin-top: 0px;
 }
+
+/* restaurant type */
 .restaurant_type{
 	display: block;
 }
 
+/* image gallery slide show */
 .image-gallery{
 	display: block;
 }
 
-.content{
-	
-}
-
 /*main content of restaurant*/
 
+/* Restaurant title  */
 .content > .res-details #restaurant-title{
 	color: #000000;
 }
 
+/* all labels or title */
 .labels{
 	color:#000000;
 	margin-bottom: 0px;
 	font-weight: bold;
 }
-.restaurant-timing {
+
+/* restaurant timing */
+.content>.res-details .restaurant-timing {
 	color:#959393;
+	clear: both;
+	font-size: 1.0em;
 }
+
+/* time table of restaurant */
 .timing_table #timing_title{
 	color: #000000;
 }
+
+/* deatils of restaurant */
 .content > .res-details{
 	display: inline-block;
+	font-size: 1.0em;
+	color:#B0A9A9;
 }
 
 /* title of restaurants */
@@ -70,41 +90,42 @@ and open the template in the editor.
 	font-weight: bold;
 }
 
-.content > .res-details {
-	font-size: 1.0em;
-	color:#B0A9A9;
-}
-
-.content>.res-details .restaurant-timing *{
-	clear: both;
-	font-size: 1.0em;
-}
-
 .details{
 	float: left;
 	/*! position: absolute; */
 	margin-right:5%;
 }
+
+/* restaurant rating image */
 .rating img{
 	height: 20px;
 }
+
+/* related restaurant slide show */
 .related_restaurants_slide{
 	clear: both;
 }
+
+/* related restaurant */
 .related-restaurant{
 	display: block;
 	position: relative;
 }
+
+/* title of restaurants */
 .related_restaurants_slide .related-restaurant p.title{
 	display: block;
 	position: relative;
 }
+
+/* rating image */
 .related_restaurants_slide .related-restaurant img.rating{
 	height: 20px;
 	display: block;
 	position: relative;
 }
 
+/* details */
 .related_restaurants_slide .related-restaurant .details{
 	font-size: 0.8em;
 	display: block;

@@ -21,10 +21,10 @@ if ( is_singular( 'restaurants' ) ) {
 					// Output buffer starts
 					ob_start();
 					//get restaurant type
-					$terms = wp_get_post_terms( $post->ID, 'restaurants_type', '' );
-					if ( !is_wp_error( $terms ) && $terms ) {
+					$res_type = wp_get_post_terms( $post->ID, 'restaurants_type', '' );
+					if ( !is_wp_error( $res_type ) && $res_type ) {
 						$term_text = '';
-						foreach ( $terms as $term ) {
+						foreach ( $res_type as $term ) {
 							$term_text .= ' ' . $term->name;
 						}
 						echo $term_text . '.';
@@ -200,6 +200,7 @@ if ( is_singular( 'restaurants' ) ) {
 					<hr />
 				</div>
 
+				<!--- display description of restaurant -->
 				<?php echo the_content(); ?>
 
 				<div class="tag-food-type col span_12_of_12">
@@ -209,9 +210,11 @@ if ( is_singular( 'restaurants' ) ) {
 						// Output buffer starts 
 						ob_start();
 						//get food type for restaurant
-						$terms = wp_get_post_terms( $post->ID, 'food_type', '' );
-						if ( !is_wp_error( $terms ) && $terms ) {
-							foreach ( $terms as $term ) {
+						$food_type = wp_get_post_terms( $post->ID, 'food_type', '' );
+						
+						$term_text = '';
+						if ( !is_wp_error( $food_type ) && $food_type ) {
+							foreach ( $food_type as $term ) {
 								$term_text .=" " . $term->name;
 							}
 							echo $term_text;
