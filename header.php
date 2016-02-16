@@ -10,6 +10,49 @@
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+	<style type="text/css">
+		<?php 
+		//output buffer starts
+		ob_start();
+		?>
+		.navigation{
+			background-color: #8fc533;
+			color: #FFFFFF;
+		}
+		.site-info{
+			background-color: #0F1821;
+		}
+		.contact-info{
+			background-color: #2D3E50;
+			color: #7C92A9;
+		}
+		.copyright-info{
+			color:#50575E;
+		}
+		.content > .res-details{
+			color:#B0A9A9;
+		}
+		.content>.res-details .restaurant-timing {
+			color:#959393;
+		}
+		/* taxonomy css */
+		.tag{
+			color: #94D5F5;
+		}
+		<?php 
+		
+		$ob_styles = ob_get_clean();
+		
+		/**
+		 * to change colors of div and headers 
+		 * 
+		 * @param string $var
+		 * @param string $ob_styles
+		 */
+		$ob_styles = apply_filters('rt_restaurant_custom_color_style', $ob_styles);
+		echo $ob_styles;
+		?>
+	</style>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">

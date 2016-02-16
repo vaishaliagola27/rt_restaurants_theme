@@ -25,11 +25,6 @@ and open the template in the editor.
 	display: block;
 }
 
-/* taxonomy css */
-.tag{
-	color: #94D5F5;
-}
-
 /* restaurant type taxonomy */
 .restaurant_type_tag>p:nth-of-type(1){
 	width: 11%;
@@ -69,7 +64,6 @@ and open the template in the editor.
 
 /* restaurant timing */
 .content>.res-details .restaurant-timing {
-	color:#959393;
 	clear: both;
 	font-size: 1.2rem;
 }
@@ -83,7 +77,6 @@ and open the template in the editor.
 .content > .res-details{
 	display: inline-block;
 	font-size: 1.6rem;
-	color:#B0A9A9;
 }
 
 /* title of restaurants */

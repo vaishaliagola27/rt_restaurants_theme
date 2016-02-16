@@ -15,14 +15,11 @@ and open the template in the editor.
 
 /* contact info part */
 .contact-info{
-	background-color: #2D3E50;
 	height: auto;
 	margin: 0px;
 	padding-top: 40px;
-	color: #7C92A9;
 	display: inline-block;
 	position: relative;
-	color: #FFFFFF;
 }
 
 .contact-info> div:nth-of-type(1){
@@ -35,7 +32,6 @@ and open the template in the editor.
 /* website info */
 .site-info{
 	height: auto;
-	background-color: #0F1821;
 	margin: 0px;
 }
 /* copyright details */
@@ -46,7 +42,7 @@ and open the template in the editor.
 }
 
 /* rtCamp link */
-.site-info > .copyright-info span a.rtCamp-link{
+.copyright-info span a.rtCamp-link{
 	text-decoration: none;
 	font-size: 2.0rem;
 	font-family: 'Great Vibes', cursive;
