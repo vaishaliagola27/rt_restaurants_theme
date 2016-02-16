@@ -49,6 +49,8 @@ and open the template in the editor.
 /* image gallery slide show */
 .image-gallery{
 	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 /*main content of restaurant*/
@@ -69,7 +71,7 @@ and open the template in the editor.
 .content>.res-details .restaurant-timing {
 	color:#959393;
 	clear: both;
-	font-size: 1.0em;
+	font-size: 1.2rem;
 }
 
 /* time table of restaurant */
@@ -80,13 +82,13 @@ and open the template in the editor.
 /* deatils of restaurant */
 .content > .res-details{
 	display: inline-block;
-	font-size: 1.0em;
+	font-size: 1.6rem;
 	color:#B0A9A9;
 }
 
 /* title of restaurants */
 .content >.res-details #restaurant-title{
-	font-size: 1.7em;
+	font-size: 2.4rem;
 	font-weight: bold;
 }
 
@@ -98,7 +100,8 @@ and open the template in the editor.
 
 /* restaurant rating image */
 .rating img{
-	height: 20px;
+	height:12px;
+	height: 1.2rem;
 }
 
 /* related restaurant slide show */
@@ -112,29 +115,44 @@ and open the template in the editor.
 	position: relative;
 }
 
+.related_restaurants >div:nth-of-type(1){
+	font-weight: bold;
+	color: #545D61;
+}
+/* image of restaurant */
+.related-restaurant >div img{
+	width:90%;
+}
+
 /* title of restaurants */
 .related_restaurants_slide .related-restaurant p.title{
 	display: block;
 	position: relative;
+	font-weight: bold;
+	color: #545D61;
 }
 
 /* rating image */
 .related_restaurants_slide .related-restaurant img.rating{
-	height: 20px;
+	height:15px;
+	height: 1.5rem;
 	display: block;
 	position: relative;
 }
 
 /* details */
 .related_restaurants_slide .related-restaurant .details{
-	font-size: 0.8em;
+	font-size: 1.4rem;
+	width: 90%;
+	color: #606667;
 	display: block;
+	margin-bottom: 5%;
 }
 /* sidebar css */
 .content> .sidebar{
 	background-color: #EEEEEE;
 	display: inline-block;
-	height: 1000px;
+	height: 999px;
 }
 
 /* slick slider changes */

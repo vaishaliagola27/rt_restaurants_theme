@@ -8,14 +8,13 @@
  *
  * @package rt-restaurants
  */
-
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer col span_12_of_12" role="contentinfo">
-		<div class="contact-info col span_12_of_12">
-			
+<footer id="colophon" class="site-footer col span_12_of_12" role="contentinfo">
+	<div class="contact-info col span_12_of_12">
+		<div class="col span_10_of_12">
 			<div class="footer-menu col span_3_of_12">
 				<p class="contact-info-title">
 					LUXURY RESTAURANTS
@@ -24,7 +23,7 @@
 					<?php clean_custom_menus(); ?>
 				</div>
 			</div>
-			<div class="contact-us col span_4_of_12">
+			<div class="contact-us col span_5_of_12">
 				<p class="contact-info-title">
 					CONTACT US
 				</p>
@@ -67,7 +66,7 @@
 						<i class="fa fa-rss-square fa-lg"></i>
 					</div>
 				</div>
-				
+
 				<div class="newsletter">
 					<p class="contact-info-title">
 						NEWSLETTER
@@ -80,18 +79,21 @@
 							<input type="email" placeholder="Your email address.">
 							<div class="fa fa-envelope fa-2x"></div>
 						</form>
-						
+
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="site-info col span_12_of_12">
-			<div class="site-title-footer col span_3_of_12"><img src="<?php echo get_template_directory_uri().'/images/logo_footer.png'?>" /></div>
-			<div class="copyright-info col span_5_of_12">
+	</div>
+	<div class="site-info col span_12_of_12">
+		<div class="col span_10_of_12">
+			<div class="site-title-footer col span_4_of_12"><img src="<?php echo get_template_directory_uri() . '/images/logo_footer.png' ?>" /></div>
+			<div class="copyright-info col span_6_of_12">
 				<span>Designed by <a class="rtCamp-link" href="https://rtcamp.com/">rtCamp</a>. All rights Reserved. Copyright © 2016.</span> 
 			</div>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+		</div>
+	</div> <!-- site-info  -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

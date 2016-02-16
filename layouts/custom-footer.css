@@ -25,6 +25,13 @@ and open the template in the editor.
 	color: #FFFFFF;
 }
 
+.contact-info> div:nth-of-type(1){
+	margin-left:6.86%; 
+}
+
+.site-info> div:nth-of-type(1){
+	margin-left:6.86%; 
+}
 /* website info */
 .site-info{
 	height: auto;
@@ -33,31 +40,32 @@ and open the template in the editor.
 }
 /* copyright details */
 .copyright-info{
-	padding-top: 15px;
+	padding-top: 2%;
 	float: right;
+	text-align: right;
 }
 
 /* rtCamp link */
 .site-info > .copyright-info span a.rtCamp-link{
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 2.0rem;
 	font-family: 'Great Vibes', cursive;
 	font-weight: normal;
 	color: #FFFFFF;
 }
 
 /* footer menu */
-.contact-info > .footer-menu{
-	margin-left: 5%;
+.footer-menu{
 	display: block;
+	margin-left: 0px;
 }
 
 /* footer menu links */
 .footer-menu a.nav-links {
 	color: #7C92A9;
-	font-size: 12px;
+	font-size: 1.2rem;
 	text-decoration: none;
-	padding:0px 3% 10px 0px;
+	padding:0px 3% 1.0rem 0px;
 	display: block;
 	font-weight: bold;
 }
@@ -70,9 +78,9 @@ and open the template in the editor.
 
 /* contact details */
 .contact-info .contact-us .contact-details{
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-align: justify;
-	margin-top: -10px;
+	margin-top: -1.1%;
 	color: #7C92A9;
 }
 
@@ -89,7 +97,7 @@ and open the template in the editor.
 	display: inline-block;
 	position: relative;
 	clear: both;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 /* phone number */
@@ -120,7 +128,7 @@ and open the template in the editor.
 
 /* newsletter data */
 .newsletter p:nth-of-type(2){
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 /* emailid form */
@@ -133,8 +141,8 @@ and open the template in the editor.
 /* email id input box */
 .email-form input{
 	display: inline-block;
-	font-size: 12px;
-	padding: 10px;
+	font-size: 1.2rem;
+	padding: 1.0rem;
 	width: 70%;
 }
 

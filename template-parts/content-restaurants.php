@@ -211,7 +211,7 @@ if ( is_singular( 'restaurants' ) ) {
 						ob_start();
 						//get food type for restaurant
 						$food_type = wp_get_post_terms( $post->ID, 'food_type', '' );
-						
+
 						$term_text = '';
 						if ( !is_wp_error( $food_type ) && $food_type ) {
 							foreach ( $food_type as $term ) {
@@ -257,32 +257,37 @@ if ( is_singular( 'restaurants' ) ) {
 						 * Related restaurants	
 						 */
 						$related_res_data = get_post_meta( $post->ID, '_related_restaurant', true );
-						foreach ( $related_res_data as $val ) {
-							$post_rel = explode( "-", $val );
+						if ( !empty( $related_res_data ) ) {
+							foreach ( $related_res_data as $val ) {
+								$related_restaurant = get_post( $val );
 
-							$related_restaurant = get_post( $post_rel[ 0 ] );
-
-							if ( $related_restaurant ) {
-								?>
-								<div class="related-restaurant"> 
-									<div><?php echo get_the_post_thumbnail( $post_rel[ 0 ] ); ?></div>
-									<p class="title col span_11_of_12"><?php echo $related_restaurant->post_title ?></p>
-									<?php
-									$rating = get_post_meta( $post->ID, '_average_rating', true );
-									if ( !empty( $rating ) || $rating != NULL ) {
-										$star_url = \rtCamp\WP\rtRestaurants\URL . 'assets/images/';
-										
-										echo "<img class='rating' src=\"" . $star_url . intval( $rating ) . "star.png\" />";
-									}
+								if ( $related_restaurant ) {
 									?>
-									<p class="details col span_11_of_12">
+									<div class="related-restaurant"> 
+										<div><?php echo get_the_post_thumbnail( $val ); ?></div>
+										<p class="title col span_11_of_12"><?php echo $related_restaurant->post_title ?></p>
 										<?php
-										echo substr( $related_restaurant-> post_content, 0, 180 ) . "..." . "<a href='". get_permalink( $post_rel[0] ) ."'>Read More.</a>";
+										$rating = get_post_meta( $post->ID, '_average_rating', true );
+										if ( !empty( $rating ) || $rating != NULL ) {
+											$star_url = \rtCamp\WP\rtRestaurants\URL . 'assets/images/';
+
+											echo "<img class='rating' src=\"" . $star_url . intval( $rating ) . "star.png\" />";
+										}
 										?>
-									</p>
-								</div>
-								<?php
+										<p class="details col span_11_of_12">
+											<?php
+											echo substr( $related_restaurant->post_content, 0, 180 ) . "..." . "<a href='" . get_permalink( $val ) . "'>Read More.</a>";
+											?>
+										</p>
+									</div>
+									<?php
+								}
 							}
+						}
+						else {
+						?>
+						<div>No related Restaurants found!</div>
+						<?php
 						}
 
 						// Empty output buffer dat into variable 
@@ -307,7 +312,7 @@ if ( is_singular( 'restaurants' ) ) {
 			<div class="sidebar col span_4_of_12">
 				SIDEBAR
 			</div>
-			
+
 		</section>
 	</article>
 	<?php

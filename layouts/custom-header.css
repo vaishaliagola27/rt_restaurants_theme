@@ -11,11 +11,11 @@ and open the template in the editor.
 /* main header */
 #masthead {
 	background: #ffffff none repeat scroll 0 0;
+	font-family: 'Roboto', sans-serif;
 }
 
-/* title */
-.site-title {
-	text-align: right;
+#masthead>div:nth-of-type(1){
+	margin-left: 6.86%;
 }
 
 /* advertisement on header */
@@ -23,6 +23,7 @@ and open the template in the editor.
 	background: #EEEEEE;
 	height: 100px;
 	text-align: center;
+	margin: 0px;
 }
 
 /* navigation menu */
@@ -30,14 +31,14 @@ and open the template in the editor.
 	display: inline-block;
 	position: relative;
 	background-color: #8fc533;
-	margin: 0;
+	margin: 0px;
 	padding: 10px 0 5px 0;
 }
 
 /* links on navigation menu */
 .navigation a.nav-links {
 	color: #ffffff;
-	font-size: 15px;
+	font-size: 1.4rem;
 	text-decoration: none;
 	padding-right: 3%;
 	font-weight: bold;
@@ -46,7 +47,7 @@ and open the template in the editor.
 /* search icon */
 .search-icon{
 	float: right;
-	margin: 0px 8.50% 5px 0;
+	margin: 0px 10% 5px 0;
 	width: 15px;
 	height: 15px;
 }

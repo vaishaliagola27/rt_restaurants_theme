@@ -21,27 +21,30 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="site">
-			<!--<a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'rt-restaurants' );  ?></a>-->
+			<!--<a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'rt-restaurants' );   ?></a>-->
 
 			<header id="masthead" class="site-header section group col span_12_of_12" role="banner">
-				<div class="site-branding">
-					<div class="site-title col span_5_of_12"><img src="<?php echo get_template_directory_uri().'/images/logo.png' ?>" /></div>
-					<div class="advertisement col span_6_of_12" >
-						ADVERTISEMENT
-					</div>
-				</div><!-- .site-branding -->
+				<div class="col span_10_of_12">
+					<div class="site-branding">
+						<div class="site-title col span_5_of_12"><img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" /></div>
+						<div class="advertisement col span_7_of_12" >
+							ADVERTISEMENT
+						</div>
+					</div><!-- .site-branding -->
+				</div>
 
 				<nav class="navigation col span_12_of_12">
 					<!-- extra space -->
 					<div class="col span_1_of_12"></div>
-					<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); 
+					<?php
+					//wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); 
 					clean_custom_menus();
 					?>
 					<div class="search-icon col span_1_of_12">
-						<img src="<?php echo get_template_directory_uri().'/images/search-icon.png'?>" />
+						<img src="<?php echo get_template_directory_uri() . '/images/search-icon.png' ?>" />
 					</div>
 				</nav>
-				
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
