@@ -112,10 +112,6 @@ and open the template in the editor.
 	font-weight: bold;
 	color: #545D61;
 }
-/* image of restaurant */
-.related-restaurant >div img{
-	width:90%;
-}
 
 /* title of restaurants */
 .related_restaurants_slide .related-restaurant p.title{

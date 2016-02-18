@@ -74,7 +74,7 @@ if ( is_singular( 'restaurants' ) ) {
 					foreach ( $attachments as $attachment ) {
 						?>
 						<div id="gallery-image"> 
-							<?php echo wp_get_attachment_image( $attachment->ID, 'full' ); ?>
+							<?php echo wp_get_attachment_image( $attachment->ID, 'rt_restaurant_slider' ); ?>
 						</div>
 						<?php
 					}
@@ -264,7 +264,7 @@ if ( is_singular( 'restaurants' ) ) {
 								if ( $related_restaurant ) {
 									?>
 									<div class="related-restaurant"> 
-										<div><?php echo get_the_post_thumbnail( $val ); ?></div>
+										<div><?php echo get_the_post_thumbnail($val, 'rt_restaurant_thumb' ); ?></div>
 										<p class="title col span_11_of_12"><?php echo $related_restaurant->post_title ?></p>
 										<?php
 										$rating = get_post_meta( $post->ID, '_average_rating', true );

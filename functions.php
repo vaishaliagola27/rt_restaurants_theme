@@ -199,3 +199,7 @@ function clean_custom_menus() {
 		<?php
 	}
 }
+//set size for slide
+add_image_size( 'rt_restaurant_thumb', 230, 110, true );
+
+add_image_size('rt_restaurant_slider',1150,450,TRUE);

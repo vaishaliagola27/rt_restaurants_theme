@@ -405,9 +405,12 @@ dt {
 dd {
 	margin: 0 1.5rem 1.5rem;
 }
-
-img {
-	height: auto; /* Make sure images are scaled correctly. */
+img{
+	height:auto;
+	max-width: 100%;
+}
+.advertisement >img {
+	height: 100px; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
 

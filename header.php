@@ -11,10 +11,10 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<style type="text/css">
-		<?php 
-		//output buffer starts
-		ob_start();
-		?>
+<?php
+//output buffer starts
+ob_start();
+?>
 		.navigation{
 			background-color: #8fc533;
 			color: #FFFFFF;
@@ -39,19 +39,18 @@
 		.tag{
 			color: #94D5F5;
 		}
-		<?php 
-		
-		$ob_styles = ob_get_clean();
-		
-		/**
-		 * to change colors of div and headers 
-		 * 
-		 * @param string $var
-		 * @param string $ob_styles
-		 */
-		$ob_styles = apply_filters('rt_restaurant_custom_color_style', $ob_styles);
-		echo $ob_styles;
-		?>
+<?php
+$ob_styles = ob_get_clean();
+
+/**
+ * to change colors of div and headers 
+ * 
+ * @param string $var
+ * @param string $ob_styles
+ */
+$ob_styles = apply_filters( 'rt_restaurant_custom_color_style', $ob_styles );
+echo $ob_styles;
+?>
 	</style>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -64,14 +63,19 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="site">
-			<!--<a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'rt-restaurants' );   ?></a>-->
+			<!--<a class="skip-link screen-reader-text" href="#content"><?php //esc_html_e( 'Skip to content', 'rt-restaurants' );    ?></a>-->
 
 			<header id="masthead" class="site-header section group col span_12_of_12" role="banner">
 				<div class="col span_10_of_12">
 					<div class="site-branding">
 						<div class="site-title col span_5_of_12"><img src="<?php echo get_template_directory_uri() . '/images/logo.png' ?>" /></div>
 						<div class="advertisement col span_7_of_12" >
-							ADVERTISEMENT
+							<?php
+							global $wpdb;
+							$results = $wpdb->get_results( 'SELECT image_id FROM wp_advertisement_images ORDER BY rand() LIMIT 1', OBJECT );
+							$url = wp_get_attachment_image_src( $results[ 0 ]->image_id, true );
+							?>
+							<img height="100px" width="500px" src="<?php echo $url[ 0 ]; ?>" />
 						</div>
 					</div><!-- .site-branding -->
 				</div>
