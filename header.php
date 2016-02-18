@@ -11,13 +11,11 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<style type="text/css">
-<?php
-//output buffer starts
-ob_start();
-?>
 		.navigation{
 			background-color: #8fc533;
-			color: #FFFFFF;
+		}
+		.navigation a.nav-links{
+			color:#FFFFFF;
 		}
 		.site-info{
 			background-color: #0F1821;
@@ -39,18 +37,7 @@ ob_start();
 		.tag{
 			color: #94D5F5;
 		}
-<?php
-$ob_styles = ob_get_clean();
 
-/**
- * to change colors of div and headers 
- * 
- * @param string $var
- * @param string $ob_styles
- */
-$ob_styles = apply_filters( 'rt_restaurant_custom_color_style', $ob_styles );
-echo $ob_styles;
-?>
 	</style>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">

@@ -203,3 +203,15 @@ function clean_custom_menus() {
 add_image_size( 'rt_restaurant_thumb', 230, 110, true );
 
 add_image_size('rt_restaurant_slider',1150,450,TRUE);
+
+//customizer
+function customize_colors()
+{
+        echo "<style type='text/css'>
+		.navigation{ background-color:".get_theme_mod('navigation_color_setting')."; }
+		.site-info { background-color:".get_theme_mod('footer_website_info_setting').";}
+		.navigation a.nav-links{ color:".get_theme_mod('navigation_font_color_setting')." }
+         </style>";
+    
+}
+add_action( 'wp_head', 'customize_colors');
