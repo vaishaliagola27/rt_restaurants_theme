@@ -211,7 +211,13 @@ function customize_colors()
 		.navigation{ background-color:".get_theme_mod('navigation_color_setting')."; }
 		.site-info { background-color:".get_theme_mod('footer_website_info_setting').";}
 		.navigation a.nav-links{ color:".get_theme_mod('navigation_font_color_setting')." }
-         </style>";
+		.contact-info{ background-color:".get_theme_mod('footer_contact_info_setting').";
+			color:".get_theme_mod('footer_contact_info_font_setting').";}	
+		.copyright-info{color:".get_theme_mod('copyright_font_setting').";}
+		.content > .res-details{".get_theme_mod('main_content_font_setting').";}
+		.content>.res-details .restaurant-timing {".get_theme_mod('timig_font_setting').";}
+		.tag{".get_theme_mod('tag_font_setting').";}
+	</style>";
     
 }
 add_action( 'wp_head', 'customize_colors');
